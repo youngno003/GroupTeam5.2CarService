@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/layoutPadding"
+    android:weightSum="10"
+    tools:context="d14cqcp01.group5.carservices.UserInfoActivity">
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:id="@+id/txtUserInfo"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:text="Thông tin người dùng"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_weight="3"
+            android:text="Họ tên:"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/txtHoTen"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="3"
+                android:text="Email:"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/txtEmail"
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="3"
+                android:text="SĐT:"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/txtSDT"
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:id="@+id/btnThoat"
+            android:layout_weight="1"
+            android:text="Trở về"
+            style="@style/circleButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+</LinearLayout>

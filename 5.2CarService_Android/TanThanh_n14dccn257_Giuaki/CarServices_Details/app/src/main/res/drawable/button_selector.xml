@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true"
+        android:state_pressed="false">
+        <color android:color="@color/secondaryColor"/>
+    </item>
+
+    <item android:state_enabled="true"
+        android:state_pressed="true">
+        <color android:color="@color/secondaryDarkColor"/>
+    </item>
+
+    <item android:state_enabled="false">
+        <color android:color="@color/state_disable_color"/>
+    </item>
+
+</selector>

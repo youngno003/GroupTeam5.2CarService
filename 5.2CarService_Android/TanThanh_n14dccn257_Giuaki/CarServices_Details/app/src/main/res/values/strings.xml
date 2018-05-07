@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">CarServices</string>
+
+    <!--Database-->
+    <string name="NODE_COACH">CoachList</string>
+    <string name="NODE_COMPANY">Company</string>
+    <string name="NODE_TICKET">TicketList</string>
+    <string name="NODE_PHONE">Phone</string>
+    <!-- Facebook Api-->
+    <!--<string name="facebook_app_id">194919544605668</string>-->
+    <!--<string name="fb_login_protocol_scheme">fb194919544605668</string>-->
+
+    <!-- layout_dang_ky_tai_khoan.xml-->
+    <string name="profile">PROFILE</string>
+    <string name="display_name">Họ và tên:</string>
+    <string name="type_display_name">Nhập họ và tên</string>
+    <string name="email">Email:</string>
+    <string name="type_email">Nhập email</string>
+    <string name="password">Mật khẩu:</string>
+    <string name="type_password">Nhập mật khẩu</string>
+    <string name="password_confirm">Xác nhận lại mật khẩu:</string>
+    <string name="type_password_confirm">Nhập lại mật khẩu</string>
+    <string name="phone">Điện thoại:</string>
+    <string name="type_phone">Nhập số điện thoại</string>
+    <string name="signup">ĐĂNG KÍ</string>
+    <string name="avatar_description">Avatar</string>
+
+    <!--layout_dat_lai_mat_khau-->
+    <string name="notification_reset_password">Hãy nhập lại địa chỉ email \nđã đăng ký để nhận được email đặt lại mật khẩu.</string>
+    <string name="registered_email">Nhập lại email đã đăng ký:</string>
+    <string name="sent_reset_password_email">Gửi</string>
+    <string name="registered_email_hint">Email của bạn</string>
+
+    <!-- layout_quan_li_xe_khach-->
+    <string name="search_passenger_car">Tìm kiếm xe khách</string>
+    <string name="user_info">Thông tin người dùng</string>
+    <string name="booking_history">Lịch sử đặt vé</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="rating">Đánh giá nhà xe</string>
+
+    <!--activity_search-->
+    <string name="start">Điểm đi:</string>
+    <string name="end">Điểm đến:</string>
+    <string name="start_time">Thời gian khởi hành:</string>
+    <string name="pickDay">Chọn ngày</string>
+    <string name="pickTime">Chọn giờ</string>
+    <string-array name="arrTinhThanh">
+        <item>An Giang</item>
+        <item>Bà Rịa - Vũng Tàu</item>
+        <item>Bắc Giang</item>
+        <item>Bắc Kạn</item>
+        <item>Bạc Liêu</item>
+        <item>Bắc Ninh</item>
+        <item>Bến Tre</item>
+        <item>Bình Định</item>
+        <item>Bình Dương</item>
+        <item>Bình Phước</item>
+        <item>Bình Thuận</item>
+        <item>Cà Mau</item>
+        <item>Cao Bằng</item>
+        <item>Đắk Lắk</item>
+        <item>Đắk Nông</item>
+        <item>Điện Biên</item>
+        <item>Đồng Nai</item>
+        <item>Đồng Tháp</item>
+        <item>Gia Lai</item>
+        <item>Hà Giang</item>
+        <item>Hà Nam</item>
+        <item>Hà Tĩnh</item>
+        <item>Hải Dương</item>
+        <item>Hậu Giang</item>
+        <item>Hòa Bình</item>
+        <item>Hưng Yên</item>
+        <item>Khánh Hòa</item>
+        <item>Kiên Giang</item>
+        <item>Kon Tum</item>
+        <item>Lai Châu</item>
+        <item>Lâm Đồng</item>
+        <item>Lạng Sơn</item>
+        <item>Lào Cai</item>
+        <item>Long An</item>
+        <item>Nam Định</item>
+        <item>Nghệ An</item>
+        <item>Ninh Bình</item>
+        <item>Ninh Thuận</item>
+        <item>Phú Thọ</item>
+        <item>Quảng Bình</item>
+        <item>Quảng Nam</item>
+        <item>Quảng Ngãi</item>
+        <item>Quảng Ninh</item>
+        <item>Quảng Trị</item>
+        <item>Sóc Trăng</item>
+        <item>Sơn La</item>
+        <item>Tây Ninh</item>
+        <item>Thái Bình</item>
+        <item>Thái Nguyên</item>
+        <item>Thanh Hóa</item>
+        <item>Thừa Thiên Huế</item>
+        <item>Tiền Giang</item>
+        <item>Trà Vinh</item>
+        <item>Tuyên Quang</item>
+        <item>Vĩnh Long</item>
+        <item>Vĩnh Phúc</item>
+        <item>Yên Bái</item>
+        <item>Phú Yên</item>
+        <item>Cần Thơ</item>
+        <item>Đà Nẵng</item>
+        <item>Hải Phòng</item>
+        <item>Hà Nội</item>
+        <item>TP HCM</item>
+    </string-array>
+
+    <!-- result_item_layout-->
+
+    <!-- DatCho-->
+    <string name="currentCarID">CAR_ID</string>
+    <string name="currentCarType">CAR_TYPE</string>
+
+    <!--layout đăng nhập-->
+    <string name="hint_taikhoan">Email</string>
+    <string name="hint_matkhau">Mật khẩu</string>
+    <string name="text_quenmatkhau">Quên mật khẩu</string>
+    <string name="text_taotaikhoan">Tạo tài khoản</string>
+    <string name="text_dangnhap">Đăng nhập</string>
+    <string name="text_dangnhapmail">Đăng nhập Gmail</string>
+</resources>

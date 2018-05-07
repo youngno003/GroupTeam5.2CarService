@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "126466586335",
+    "firebase_url": "https://carservices-cb0bd.firebaseio.com",
+    "project_id": "carservices-cb0bd",
+    "storage_bucket": "carservices-cb0bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126466586335:android:4bae239fa75d16d2",
+        "android_client_info": {
+          "package_name": "d14cqcp01.group5.carservices"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126466586335-qf1s3esghiv0sdp3lbopo09fj8caiuce.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "d14cqcp01.group5.carservices",
+            "certificate_hash": "9114ea4fd6416827acfc7e24ffe8cf0c4040e493"
+          }
+        },
+        {
+          "client_id": "126466586335-j7pgrukf0lp83msangi3flqc8llejq2c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXr_1UXa2C-Kk15FNBJhNp5wP0xL0GQKg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126466586335-j7pgrukf0lp83msangi3flqc8llejq2c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
