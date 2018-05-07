@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "309923073731",
+    "firebase_url": "https://danhsachlaptop-aa1cd.firebaseio.com",
+    "project_id": "danhsachlaptop-aa1cd",
+    "storage_bucket": "danhsachlaptop-aa1cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309923073731:android:994eb8bcd00c8646",
+        "android_client_info": {
+          "package_name": "com.example.mac.democustom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309923073731-fgqgg59tbv4iesqt9e3cj8nrdlok4o22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD-NFlPpFPs-tea-GYDT3pdqMsPQ_sdRI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

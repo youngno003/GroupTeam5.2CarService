@@ -1,0 +1,125 @@
+﻿<Window x:Class="CoachServer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoachServer"
+        mc:Ignorable="d"
+        HorizontalAlignment="Stretch" Height="900">
+    <Window.Resources>
+        <local:DatetimeConverter x:Key="DatetimeConverter"></local:DatetimeConverter>
+        <local:PayOrCancelConverter x:Key="PayOrCancelConverter"></local:PayOrCancelConverter>
+    </Window.Resources>
+    <TabControl>
+        <TabItem Header="QUẢN LÝ VÉ">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <DataGrid Grid.Row="1" Name="dg1" IsReadOnly="True" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Mã đặt vé" Binding="{Binding id}"/>
+                        <DataGridTextColumn Header="Mã số ghế" Binding="{Binding seatNumber}"/>
+                        <DataGridTextColumn Header="Trạng thái" Width="120" Binding="{Binding status}"/>
+                        <DataGridTemplateColumn>
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <WrapPanel Visibility="{Binding status, Converter={StaticResource PayOrCancelConverter}}">
+                                        <Button Background="GreenYellow" Click="PayButton">Thanh toán</Button>
+                                        <Button Background="OrangeRed" Click="CancelButton">Hủy</Button>
+                                    </WrapPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </TabItem>
+        <TabItem Header="QUẢN LÝ CHUYẾN XE">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <DataGrid SelectionChanged="dg2_SelectionChanged" Name="dg2" SelectionMode="Single" IsReadOnly="True" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <!--<DataGridTextColumn Header="STT" Binding="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplatedParent.(ItemsControl.AlternationIndex)}"/>-->
+                        <DataGridTextColumn Header="Nhà xe" Binding="{Binding companyId}"/>
+                        <DataGridTextColumn Header="Điểm đi" Binding="{Binding from}"/>
+                        <DataGridTextColumn Header="Điểm đến" Binding="{Binding to}"/>
+                        <DataGridTextColumn Header="Lịch trình" Binding="{Binding journey}"/>
+                        <DataGridTextColumn Header="Giá" Binding="{Binding price}"/>
+                        <DataGridTextColumn Header="Thời gian khởi hành" Binding="{Binding timeStart}"/>
+                        <DataGridTextColumn Header="Thời gian đến" Binding="{Binding timeEnd}"/>
+                        <DataGridTextColumn Header="Loại xe" Binding="{Binding type}"/>
+                        <DataGridTextColumn Header="Số ghế trống" Binding="{Binding vacantSeats}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackPanel>
+                        <TextBlock Text="Điểm đi:"></TextBlock>
+                        <TextBox Text="{Binding ElementName=dg2, Path=SelectedItem.from}"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <TextBlock Text="Điểm đến:"></TextBlock>
+                        <TextBox Text="{Binding ElementName=dg2, Path=SelectedItem.to}"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1">
+                        <TextBlock Text="Thời gian khởi hành:"></TextBlock>
+                        <TextBox Text="{Binding ElementName=dg2, Path=SelectedItem.timeStart, Converter={StaticResource DatetimeConverter}}"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Grid.Column="1">
+                        <TextBlock Text="Thời gian đến:"></TextBlock>
+                        <TextBox Text="{Binding ElementName=dg2, Path=SelectedItem.timeEnd, Converter={StaticResource DatetimeConverter}}"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Row="2">
+                        <TextBlock Text="Tên nhà xe:"></TextBlock>
+                        <ComboBox DisplayMemberPath="tenNhaXe" Name="cbb" Text="{Binding ElementName=dg2, Path=SelectedItem.companyId}"></ComboBox>
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Grid.Column="1">
+                        <TextBlock Text="Giá:"></TextBlock>
+                        <TextBox Text="{Binding ElementName=dg2, Path=SelectedItem.price}"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Row="3">
+                        <TextBlock Text="Loại xe:"></TextBlock>
+                        <TextBox Text="{Binding ElementName=dg2, Path=SelectedItem.type}"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Row="3" Grid.Column="1">
+                        <TextBlock Text="Số ghế trống:"></TextBlock>
+                        <TextBox Text="{Binding ElementName=dg2, Path=SelectedItem.vacantSeats}"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Row="4" Grid.ColumnSpan="2">
+                        <TextBlock Text="Lịch trình:"></TextBlock>
+                        <TextBox Text="{Binding ElementName=dg2, Path=SelectedItem.journey}"></TextBox>
+                    </StackPanel>
+                </Grid>
+                <Canvas Background="Transparent" Name="canvas" Grid.Row="1"></Canvas>
+                <Button Grid.Row="2" Width="50" Background="#0095ff" HorizontalAlignment="Left" Click="Quit">Thoát</Button>
+                <WrapPanel Name="noEdit" HorizontalAlignment="Right" Grid.Row="2">
+                    <Button Width="100" Background="LightGreen" Click="AddCoach">Thêm</Button>
+                    <Button Width="100" Background="IndianRed" Click="DelCoach">Xóa</Button>
+                    <Button Width="100" Background="#0095ff" Click="EditCoach">Sửa</Button>
+                </WrapPanel>
+                <WrapPanel Name="edit" HorizontalAlignment="Right" Grid.Row="2" Visibility="Collapsed">
+                    <Button Width="100" Background="#0095ff" Click="SaveCoach">Lưu</Button>
+                    <Button Width="100" Background="IndianRed" Click="Cancel">Hủy</Button>
+                </WrapPanel>
+            </Grid>
+        </TabItem>
+    </TabControl>
+    
+</Window>
