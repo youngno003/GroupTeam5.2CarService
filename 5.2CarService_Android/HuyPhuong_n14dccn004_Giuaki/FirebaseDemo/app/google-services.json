@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "109387352519",
+    "firebase_url": "https://demofirebaselistview.firebaseio.com",
+    "project_id": "demofirebaselistview",
+    "storage_bucket": "demofirebaselistview.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109387352519:android:a80e27f8fbff7ef8",
+        "android_client_info": {
+          "package_name": "com.example.phuong.firebasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "109387352519-l2anh71js4s6fjmr2h5l7tp2vj9nmeqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeiy-SSGqFmo4sba58MsHw3oihBrSKLZQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
