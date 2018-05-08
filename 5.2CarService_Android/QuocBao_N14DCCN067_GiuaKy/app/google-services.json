@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "218509490316",
+    "firebase_url": "https://fir-realtimecustomlistview.firebaseio.com",
+    "project_id": "fir-realtimecustomlistview",
+    "storage_bucket": "fir-realtimecustomlistview.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218509490316:android:0289f9173258dac5",
+        "android_client_info": {
+          "package_name": "com.example.asus.firebaserealtimecustomlistview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218509490316-ssu7276uugqfo7snv4ptdj0gcfre71nv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNAMYQVcfz-7X3qF3_4KfdFngnW7iPbY4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
